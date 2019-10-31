@@ -80,7 +80,7 @@ rm -f zhyd.all.js
 
 
 # -------------- start package css --------------
-cat ../../blog-web/src/main/resources/static/css/zhyd.core.css > zhyd.all.css
+cat ../../blog-web/src/main/resources/static/css/zhyd.core.css?v=1.0 > zhyd.all.css
 cat ../../blog-web/src/main/resources/static/css/zhyd.comment.css >> zhyd.all.css
 java -jar yuicompressor-2.4.8.jar zhyd.all.css -o ../../blog-web/src/main/resources/static/css/zhyd.min.css --charset utf-8 --type css
 

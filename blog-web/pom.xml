@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 
 	<name>blog-web</name>
-	<description>OneBlog 前台程序</description>
+	<description> 前台程序</description>
 
 	<parent>
 		<groupId>com.zyd</groupId>

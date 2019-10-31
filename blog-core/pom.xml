@@ -7,7 +7,6 @@
     <packaging>jar</packaging>
 
     <name>blog-core</name>
-    <description>OneBlog 核心依赖代码，包含bo、do、dao等</description>
 
     <parent>
         <groupId>com.zyd</groupId>

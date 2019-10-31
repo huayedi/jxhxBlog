@@ -54,11 +54,15 @@ ul, ol {
 .menu-box {
     /*border-bottom: 1px solid #ccc;*/
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
+    /*background: #f9f9f9;;*/
     width: 100%;
     z-index: 999;
     padding-right: 6%;
     padding-left: 6%;
+}
+
+.navbar-collapse ul li {
+    margin-left: 7px;
 }
 
 body {
@@ -66,7 +70,6 @@ body {
     font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
     font-size: 14px;
     color: #333;
-    background-color: #f1f1f1;
     min-width: 350px;
 }
 
@@ -107,14 +110,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .nav-search-box .nav-search-btn, .nav-search, .link-info .auto-link-btn {
-    color: #fff;
-    background-color: #009a61;
     border-color: #008151;
 }
 
 .nav-search-box .nav-search-btn:hover, .nav-search:hover, .link-info .auto-link-btn:hover {
     color: #fff !important;
-    background-color: #006741 !important;
+    background-color: black !important;
     border-color: #00432a !important;
 }
 
@@ -397,19 +398,19 @@ pre {
 }
 
 .navbar-default {
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
     border-color: #f8f8f8;
 }
 
 /* 鼠标聚焦状态 */
 a:hover {
-    color: #006741 !important;
+    color: black !important;
     /*font-weight: bold;*/
     text-decoration: none;
 }
 
 a {
-    color: #009a61;
+    color: black;
     text-decoration: none;
 }
 
@@ -418,9 +419,34 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+#menu-div {
+    height: 30px;
+    width: 105%;
+    margin-top: 27px;
+    color: #262a30;
+    border-radius: 5px !important;
+    transition: all .5s;
+    text-align: center;
+}
+
+#menu-div-onclick {
+    height: 30px;
+    width: 105%;
+    margin-top: 27px;
+    color: #ffffff;
+    border-radius: 5px !important;
+    transition: all .5s;
+    text-align: center;
+    background: black;
+}
+
+#menu-div:hover {
+    background: black;
+}
+
 .navbar-default .menu-box .navbar-collapse ul li .menu_a {
-    padding: 8px;
-    line-height: 4.5;
+    padding: 2px;
+    line-height: 2.1;
 }
 
 .navbar-default .menu-box .navbar-collapse ul li a {
@@ -439,17 +465,19 @@ a:-webkit-any-link {
 }
 
 .navbar-default .menu-box .navbar-collapse ul .active a {
-    /*background-color: #c40000;
-    color: #fff;*/
-    color: #009a61 !important;
-    /*border-bottom: 4px solid #009a61 !important;*/
-    font-weight: 700;
-    background-color: initial !important;
+    height: 30px;
+    width: 105%;
+    margin-top: 27px;
+    color: #ffffff !important;
+    border-radius: 5px !important;
+    transition: all .5s;
+    text-align: center;
+    background-color: black !important;
 }
 
 .navbar-default .menu-box .navbar-collapse ul li a:hover {
-    color: #017E66 !important;
-    font-weight: 700;
+    color: white !important;
+    background-color: #262830;
     background-color: initial !important;
 }
 
@@ -1030,7 +1058,7 @@ span.separation:AFTER {
     padding: 2px 4px;
     /*border:1px solid #d6d6d6;*/
     background-color: #ffffff;
-    color: #006741 !important;
+    color: black !important;
 }
 
 article {
@@ -1934,6 +1962,7 @@ nav a:first-child .meta-nav {
 /* 导航栏 */
 /* 顶部的小导航栏 */
 #topmenu {
+    border-bottom: 1px solid rgb(233, 233, 241);
     z-index: 999;
     height: 35px;
     opacity: 1
@@ -1959,7 +1988,7 @@ nav a:first-child .meta-nav {
     padding: 0;
     margin: 0;
     line-height: 30px;
-    background-color: inherit;
+    /*background-color: inherit;*/
 }
 
 /* 主导航栏 */
@@ -2295,7 +2324,7 @@ nav a:first-child .meta-nav {
     display: block;
     text-align: center;
     margin: 0 auto;
-    border-radius: 25px!important;
+    border-radius: 25px !important;
     border: 1px solid rgba(0, 0, 0, 0.1)
 }
 
@@ -3153,12 +3182,12 @@ nav a:first-child .meta-nav {
     font-weight: bold;
     /*text-transform: uppercase;*/
     letter-spacing: 0.05em;
-    color: rgba(0,0,0,0.85);
+    color: rgba(0, 0, 0, 0.85);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .oauth .oauth-line:before {
@@ -3190,9 +3219,9 @@ nav a:first-child .meta-nav {
 }
 
 * {
-    border-radius: 0!important;
+    border-radius: 0 !important;
 }
 
 #nprogress .spinner-icon {
-    border-radius: 50%!important;
+    border-radius: 50% !important;
 }

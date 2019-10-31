@@ -154,31 +154,35 @@
                 <h1 class="auto-shake"><a href="${config.siteUrl}" data-original-title="${config.siteDesc}" data-toggle="tooltip" data-placement="bottom">${config.siteName}</a></h1>
                 <p class="site-description">${config.siteDesc}</p>
             </div>
-            <ul class="nav navbar-nav ">
+                <ul class="nav navbar-nav ">
                 <li>
-                    <a href="/" class="menu_a"><i class="fa fa-home"></i>首页</a>
+                    <div id="menu-div">
+                        <a href="/" class="menu_a"><i class="fa fa-home"></i>首页</a>
+                    </div>
                 </li>
                 <@zhydTag method="types">
                     <#if types?? && types?size gt 0>
                         <#list types as item>
                             <#if item.nodes?? && item.nodes?size gt 0>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle menu_a" data-toggle="dropdown" aria-expanded="false">
+                                    <div id="menu-div">
+                                        <a href="#" class="dropdown-toggle menu_a" data-toggle="dropdown" aria-expanded="false">
                                         <i class="${item.icon!}"></i>${item.name!} <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <#list item.nodes as node>
-                                        <li><a href="/type/${node.id?c}" title="点击查看《${node.name!}》的文章">${node.name!}</a></li>
-                                        </#list>
-                                    </ul>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <#list item.nodes as node>
+                                            <li><a href="/type/${node.id?c}" title="点击查看《${node.name!}》的文章">${node.name!}</a></li>
+                                            </#list>
+                                        </ul>
+                                    </div>
                                 </li>
                             <#else>
-                                <li><a href="/type/${item.id?c}" class="menu_a"><i class="${item.icon!}"></i>${item.name!}</a></li>
+                                <li> <div id="menu-div"><a href="/type/${item.id?c}" class="menu_a"><i class="${item.icon!}"></i>${item.name!}</a></div></li>
                             </#if>
                         </#list>
                     </#if>
                 </@zhydTag>
-                <li><a href="/guestbook" class="menu_a"><i class="fa fa-comments-o"></i>留言板</a></li>
+                <li> <div id="menu-div"><a href="/guestbook" class="menu_a"><i class="fa fa-comments-o"></i>留言板</a></div></li>
                 <li><span class="pull-right nav-search main-search" data-toggle="modal" data-target=".nav-search-box"><i class="fa fa-search"></i></span></li>
             </ul>
         </div>

@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/jquery-confirm@3.3.2/dist/jquery-confirm.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" rel="stylesheet">
-    <link href="/assets/css/zhyd.core.css" rel="stylesheet">
+    <link href="/assets/css/zhyd.core.css?v=1.0" rel="stylesheet">
 </head>
 
 <body class="login">

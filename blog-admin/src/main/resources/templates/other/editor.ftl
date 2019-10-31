@@ -43,10 +43,10 @@
                     </div>
                     <br>
                     <div class="form-group row">
-                        <label class="control-label col-md-2 col-sm-2 col-xs-12" for="name">oneBlog系统定制的编辑器 </label>
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12" for="name">o系统定制的编辑器 </label>
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <div id="editor">
-                                <p>第三个 demo（oneBlog系统单独定制，支持文件上传）</p>
+                                <p>第三个 demo（系统单独定制，支持文件上传）</p>
                                 <p>
                                     使用方式：
                                 <pre><code># html<br>&lt;div id="editor"&gt;&lt;/div&gt;<br><br># js<br>$.wangEditor.init({<br>	container: "#editor",<br>	textareaName: "content",<br>	uploadUrl: "/api/uploadFile",<br>	uploadFileName: "file",<br>	uploadType: "goods",<br>	customCss: {<br>		"overflow-y": "scroll",<br>		"height": "100%",<br>		"max-height": "125px"<br>	}<br>})</code></pre>
