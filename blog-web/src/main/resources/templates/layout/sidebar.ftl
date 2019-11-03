@@ -16,11 +16,11 @@
                         <div class="about-main">
                             <div class="about-img"><a href="${config.wxCode}" class="showImage" title="微信公众号"><img src="${config.wxCode}" alt="微信公众号"></a></div>
                             <div class="about-name">${config.siteName}</div>
-                            <div class="about-the">${config.siteDesc!}</div>
+                           <#-- <div class="about-the">${config.siteDesc!}</div>-->
                         </div>
-                        <div class="clear"></div>
+                       <#-- <div class="clear"></div>-->
                         <!-- 方案一：图标展示 -->
-                        <ul class="widget-icon">
+                       <#-- <ul class="widget-icon">
                             <li class="weixin auto-shake" data-container="body"
                                 data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="<img src='${config.wxCode}' style='width: 130px;' alt='QR Code'>">
                                 <a class="tag-icon" title="微信" rel="external nofollow"><i class="fa fa-weixin"></i></a>
@@ -34,7 +34,7 @@
                             <li class="github auto-shake">
                                 <a class="tag-icon" href="${config.github}" title="点击查看我的github" target="_blank" rel="external nofollow"><i class="fa fa-github"></i></a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -78,8 +78,8 @@
     <div class="sidebar-module">
         <ul class="nav nav-tabs sidebar-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list"></i>近期文章</a></li>
-            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-thumbs-o-up"></i>站长推荐</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-hand-peace-o"></i>随机文章</a></li>
+          <#--  <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-thumbs-o-up"></i>站长推荐</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-hand-peace-o"></i>随机文章</a></li>-->
         </ul>
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="profile">

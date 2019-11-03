@@ -18,14 +18,16 @@ em {
     margin-bottom: 10px;
     margin-top: 20px;
     color: #fff;
-    background-color: #009a61;
-    border-color: #008151;
+    background-color: #333;
+    border-color: #333;
+    border-radius: 5px !important;
+    transition: all .5s;
 }
 
 #comment-form-btn:hover {
     color: #fff !important;
-    background-color: #006741 !important;
-    border-color: #00432a !important;
+    background-color: #333 !important;
+    border-color: #333 !important;
 }
 
 /*#comment-box .commentList div, .comment-box .commentList div {
@@ -210,7 +212,7 @@ em {
 }
 
 i {
-    margin: auto 3px;
+    margin: auto 1px;
 }
 
 .input-logo {
@@ -267,6 +269,8 @@ i {
 .tooltip-inner {
     min-width: 80px;
     max-width: 500px;
+    border-radius: 5px !important;
+    transition: all .5s;
 }
 
 /* icons start */

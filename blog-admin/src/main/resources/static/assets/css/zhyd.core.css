@@ -1030,7 +1030,9 @@ footer {
 }
 
 .tooltip {
-    display: block !important
+    display: block !important;
+    border-radius: 5px !important;
+    transition: all .5s;
 }
 
 .tiles {
@@ -5084,7 +5086,7 @@ ul, menu, dir {
     margin-top: 3px;
 }
 .notify i {
-    color: #5cb85c;
+    color: black;
     font-size: 15px;
 }
 .scrolltext {
