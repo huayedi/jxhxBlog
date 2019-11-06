@@ -90,18 +90,32 @@
                                              style="background-image: url('http://blogimg.codebear.cn/FsbffUDKA0bKZevMAee-Ve0uBuWK')">
                                                 <div class="article-title">
                                                     <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
-                                                       title="${item.title}"
                                                        data-toggle="tooltip" data-placement="bottom">${item.title}</a>
                                                 </div>
                                         </div>
                                     </#if>
-
-
-                                    <div class="entry-content">
+                                    <div class="article-info">
+                                        <i class="fa fa-calendar-o fa-fw"></i>
+                                        发表于 ${item.createTime?string('yyyy年MM月dd日')} •
+                                        <i class="fa fa-eye fa-fw"></i>
+                                        ${item.lookCount!(0)}次围观 •
+                                        <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
+                                    </div>
+                                    <div class="article-sub-message">
+                                        ${item.description!}
+                                    </div>
+                                    <div class="tags">
+                                        <#list item.tags as tag>
+                                            <div class="tag">
+                                                ${tag.name}
+                                            </div>
+                                        </#list>
+                                    </div>
+                                    <div class="read-more"> <a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a></div>
+                                  <#--  <div class="entry-content">
                                         <div class="archive-content">
                                             ${item.description!}
                                         </div>
-                                        <span class="title-l"></span>
                                         <span class="entry-meta">
                                         <span class="date" title="文章发表日期" data-toggle="tooltip" data-placement="bottom"><i
                                                     class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
@@ -115,13 +129,13 @@
                                                 <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
                                             </a>
                                         </span>
-                                    </span>
-                                        <div class="clear"></div>
-                                        <span class="entry-more">
-                                        <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情"
-                                           data-toggle="tooltip" data-placement="bottom">阅读全文 >></a>
-                                    </span>
-                                    </div>
+                                        </span>
+                                            <div class="clear"></div>
+                                            <span class="entry-more">
+                                            <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情"
+                                               data-toggle="tooltip" data-placement="bottom">阅读全文 >></a>
+                                        </span>
+                                    </div>-->
                                 </div>
                             </div>
                         </article>
