@@ -76,7 +76,7 @@
                                                      class="img-responsive lazy-img" alt="${item.title!}">
                                             </a>
                                             <span class="cat"><a
-                                                        href="${config.siteUrl}/type/${item.typeId?c}">${item.type.name}</a></span>
+                                                    href="${config.siteUrl}/type/${item.typeId?c}">${item.type.name}</a></span>
                                         </figure>
                                         <header class="entry-header">
                                             <h2 class="entry-title">
@@ -88,10 +88,10 @@
                                     <#else>
                                         <div class="article-cover"
                                              style="background-image: url('http://blogimg.codebear.cn/FsbffUDKA0bKZevMAee-Ve0uBuWK')">
-                                                <div class="article-title">
-                                                    <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
-                                                       data-toggle="tooltip" data-placement="bottom">${item.title}</a>
-                                                </div>
+                                            <div class="article-title">
+                                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
+                                                   data-toggle="tooltip" data-placement="bottom">${item.title}</a>
+                                            </div>
                                         </div>
                                     </#if>
                                     <div class="article-info">
@@ -111,31 +111,32 @@
                                             </div>
                                         </#list>
                                     </div>
-                                    <div class="read-more"> <a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a></div>
-                                  <#--  <div class="entry-content">
-                                        <div class="archive-content">
-                                            ${item.description!}
-                                        </div>
-                                        <span class="entry-meta">
-                                        <span class="date" title="文章发表日期" data-toggle="tooltip" data-placement="bottom"><i
-                                                    class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
-                                        <span class="views" title="文章阅读次数" data-toggle="tooltip"
-                                              data-placement="bottom"><i
-                                                    class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>
-                                        <span class="comment" title="文章评论次数11" data-toggle="tooltip"
-                                              data-placement="bottom">
-                                            <a href="${config.siteUrl}/article/${item.id?c}#comment-box"
-                                               rel="external nofollow">
-                                                <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
-                                            </a>
-                                        </span>
-                                        </span>
-                                            <div class="clear"></div>
-                                            <span class="entry-more">
-                                            <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情"
-                                               data-toggle="tooltip" data-placement="bottom">阅读全文 >></a>
-                                        </span>
-                                    </div>-->
+                                    <div class="read-more"><a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a>
+                                    </div>
+                                <#--  <div class="entry-content">
+                                      <div class="archive-content">
+                                          ${item.description!}
+                                      </div>
+                                      <span class="entry-meta">
+                                      <span class="date" title="文章发表日期" data-toggle="tooltip" data-placement="bottom"><i
+                                                  class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
+                                      <span class="views" title="文章阅读次数" data-toggle="tooltip"
+                                            data-placement="bottom"><i
+                                                  class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>
+                                      <span class="comment" title="文章评论次数11" data-toggle="tooltip"
+                                            data-placement="bottom">
+                                          <a href="${config.siteUrl}/article/${item.id?c}#comment-box"
+                                             rel="external nofollow">
+                                              <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
+                                          </a>
+                                      </span>
+                                      </span>
+                                          <div class="clear"></div>
+                                          <span class="entry-more">
+                                          <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情"
+                                             data-toggle="tooltip" data-placement="bottom">阅读全文 >></a>
+                                      </span>
+                                  </div>-->
                                 </div>
                             </div>
                         </article>
@@ -145,43 +146,41 @@
                     <article class="fade-in" style="height: auto">
                         <div class="rows">
                             <div class="col-md-10 col-sm-12">
-                                <div class="h3 text-center">亲，啥也没找到啊~~<img
-                                            src="http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/15/j_thumb.gif"
-                                            alt="[囧]"></div>
-                                <div class="h5 text-center">换个姿势，再来一次~~</div>
+                                <div class="h3 text-center">没有找到文章~</div>
+                                <div class="h5 text-center">请刷新重试</div>
                             </div>
                             <div class="col-md-2 col-sm-12">
-                                <img src="${config.staticWebSite}/img/wrong.gif" class="center-block" alt="惩罚我"
-                                     style="width: 110px;margin-top: -10px;">
+                            <#--<img src="${config.staticWebSite}/img/wrong.gif" class="center-block" alt="惩罚我"
+                                     style="width: 110px;margin-top: -10px;">-->
                             </div>
                         </div>
                         <form action="/" method="post" class="form-horizontal searchForm">
                             <input type="hidden" name="pageNumber" value="1">
-                            <div class="input-group">
+                            <div class="input-group" style="float:left">
                                 <input type="text" class="form-control br-none" name="keywords"
-                                       placeholder="换个姿势，再来一次~~">
+                                       placeholder="请刷新重试">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default br-none nav-search-btn pointer" type="submit"><i
-                                            class="fa fa-search"></i> 搜索</button>
+                                        class="fa fa-search"></i> 搜索</button>
                             </span>
                             </div>
                             <div class="clear" style="margin-bottom: 10px"></div>
-                            <ul class="list-unstyled list-inline search-hot">
-                                <li><strong style="position: relative;top: 2px;color: #999999;">热门搜索：</strong></li>
-                                <li><a class="pointer" rel="external nofollow"><span
-                                                class="label label-default">Java</span></a>
-                                </li>
-                                <li><a class="pointer" rel="external nofollow"><span
-                                                class="label label-primary">Springboot</span></a></li>
-                                <li><a class="pointer" rel="external nofollow"><span
-                                                class="label label-success">Linux</span></a></li>
-                                <li><a class="pointer" rel="external nofollow"><span
-                                                class="label label-info">Maven</span></a></li>
-                                <li><a class="pointer" rel="external nofollow"><span
-                                                class="label label-warning">Bootstrap</span></a></li>
-                                <li><a class="pointer" rel="external nofollow"><span
-                                                class="label label-danger">阿里云</span></a></li>
-                            </ul>
+                        <#--  <ul class="list-unstyled list-inline search-hot">
+                              <li><strong style="position: relative;top: 2px;color: #999999;">热门搜索：</strong></li>
+                              <li><a class="pointer" rel="external nofollow"><span
+                                              class="label label-default">Java</span></a>
+                              </li>
+                              <li><a class="pointer" rel="external nofollow"><span
+                                              class="label label-primary">Springboot</span></a></li>
+                              <li><a class="pointer" rel="external nofollow"><span
+                                              class="label label-success">Linux</span></a></li>
+                              <li><a class="pointer" rel="external nofollow"><span
+                                              class="label label-info">Maven</span></a></li>
+                              <li><a class="pointer" rel="external nofollow"><span
+                                              class="label label-warning">Bootstrap</span></a></li>
+                              <li><a class="pointer" rel="external nofollow"><span
+                                              class="label label-danger">阿里云</span></a></li>
+                          </ul>-->
                         </form>
                     </article>
                 </#if>

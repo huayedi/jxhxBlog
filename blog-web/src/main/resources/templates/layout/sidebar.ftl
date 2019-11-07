@@ -77,7 +77,7 @@
     </@zhydTag>
     <div class="sidebar-module">
         <ul class="nav nav-tabs sidebar-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list"></i>近期文章</a></li>
+            <li role="presentation" class="active"><i class="fa fa-list"></i>近期文章</li>
           <#--  <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-thumbs-o-up"></i>站长推荐</a></li>
             <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-hand-peace-o"></i>随机文章</a></li>-->
         </ul>

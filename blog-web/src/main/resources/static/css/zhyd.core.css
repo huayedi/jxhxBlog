@@ -92,7 +92,7 @@
     background-color: #262a30;
     font-size: 12px;
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 5px !important;
     transition: all .3s;
     position: relative;
     margin-left: 10px;
@@ -267,12 +267,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .nav-search-box .nav-search-btn {
-    width: 200px;
+    width: 142px;
     border-radius: 0 2px 2px 0;
 }
 
 .nav-search-box .nav-search-btn, .nav-search, .link-info .auto-link-btn {
-    border-color: #008151;
+    border-color: #090409;
 }
 
 .nav-search-box .nav-search-btn:hover, .nav-search:hover, .link-info .auto-link-btn:hover {
@@ -568,10 +568,14 @@ pre {
 }
 
 /* 鼠标聚焦状态 */
-a:hover {
+.article-title a:hover {
     color:white;
     /*font-weight: bold;*/
     transition: all .3s;
+}
+
+a:hover {
+    color:black;
 }
 
 a {
@@ -780,8 +784,8 @@ a:-webkit-any-link {
 /* 首页公告通知-breadcrumb  end */
 
 /* 返回顶部 start */
-.to-top {
-    /*background: url(../img/back-top.png) no-repeat left top;*/
+/*.to-top {
+    !*background: url(../img/back-top.png) no-repeat left top;*!
     width: 55px;
     height: 55px;
     color: black;
@@ -789,10 +793,38 @@ a:-webkit-any-link {
     border-radius: 4px;
     z-index: 100;
     background: red;
+}*/
+
+.to-top{
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background-color: #262a30;
+    right: 10px;
+    bottom: 15px;
+    padding: 5px;
+    z-index: 1050;
+    cursor: pointer;
+    line-height: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-radius: 5px !important;
 }
 
-.to-top:hover {
-    /*background: url(../img/back-top.png) no-repeat left bottom;*/
+.to-top .to-top-line {
+    position: relative;
+    width: 2px;
+    height: 100%;
+    margin-left: 4px;
+    background-color: #fff;
+}
+
+.to-top .to-top-line:first-child {
+    margin-left: 0;
 }
 
 /* 返回顶部 end */
@@ -1015,6 +1047,7 @@ span.separation:AFTER {
 
 /* 右侧目录框 */
 .sidebar-module {
+
     z-index: 10;
     padding: 1px 10px 15px 10px;
     /*border: 1px solid #ccc;*/
@@ -1036,6 +1069,10 @@ span.separation:AFTER {
 
 .sidebar-module .simple-a {
     color: #2a6496;
+}
+
+.sidebar-module a{
+    font-size: 16px;
 }
 
 .sidebar-title {
@@ -1184,6 +1221,7 @@ span.separation:AFTER {
 }
 
 #article-menu > ul > li > a {
+    font-size: 15px;
     display: block;
     padding: 3px 0;
     color: #000;
@@ -1950,15 +1988,16 @@ nav a:first-child .meta-nav {
     display: inline-block;
     margin-right: 10px;
     padding: 0 12px;
-    color: #017E66;
-    background-color: rgba(1, 126, 102, 0.08);
+    color: white;
+    background-color: black;
     line-height: 24px;
+    border-radius: 5px !important
 }
 
 .c-label:hover {
     color: #fff !important;
-    background-color: #009a61 !important;
-    border-color: #008151 !important;
+    background-color: rgba(2, 2, 2, 0.4) !important;
+    border-color: rgba(6, 3, 6, 0.53) !important;
     text-decoration: none !important;
     /*background-color: #017E66!important;*/
 }
@@ -2352,6 +2391,8 @@ nav a:first-child .meta-nav {
     }
 
     .col-sm-3 {
+        padding-right: 11px;
+        padding-left: 72px;
         width: 29.3333%;
     }
 
