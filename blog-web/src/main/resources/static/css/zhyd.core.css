@@ -273,6 +273,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .nav-search-box .nav-search-btn, .nav-search, .link-info .auto-link-btn {
     border-color: #090409;
+    border-radius: 5px !important;
 }
 
 .nav-search-box .nav-search-btn:hover, .nav-search:hover, .link-info .auto-link-btn:hover {
