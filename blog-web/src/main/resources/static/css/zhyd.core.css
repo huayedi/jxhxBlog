@@ -115,6 +115,11 @@
     transition: all .3s;
 }
 
+.tags .tag a{
+    color:white;
+}
+
+
 .read-more{
     position: relative;
     display: inline-block;

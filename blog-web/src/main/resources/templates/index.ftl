@@ -29,114 +29,63 @@
         </nav>
         <div class="row">
             <div class="col-sm-8 blog-main">
-                <@articleTag method="recommendedList" pageSize="8">
-                    <#if recommendedList?? && (recommendedList?size > 0)>
-                    <#--  <div class="blog-body expansion" style="padding: 0;">
-                          <div id="myCarousel" class="carousel slide" style="height:300px;">
-                              <ol class="carousel-indicators">
-                                  <#list recommendedList as item>
-                                      <li data-target="#myCarousel" data-slide-to="${item_index}"
-                                          class="${(item_index == 0)?string('active','')}"></li>
-                                  </#list>
-                              </ol>
-                              <div class="carousel-inner">
-                                  <#list recommendedList as item>
-                                      <div class="item ${(item_index == 0)?string('active','')}">
-                                          <a href="${config.siteUrl}/article/${item.id?c}">
-                                              <img src="${item.coverImage}" alt="${item.title}" title="${item.title}">
-                                          </a>
-                                          <div class="zyd-carousel-caption">${item.title}</div>
-                                      </div>
-                                  </#list>
-                              </div>
-                              <a class="left carousel-control hide" href="#myCarousel" role="button"
-                                 data-slide="prev">
-                                  <span class="fa fa-angle-left fa-fw fa-3x" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control hide" href="#myCarousel" role="button"
-                                 data-slide="next">
-                                  <span class="fa fa-angle-right fa-fw fa-3x" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                              </a>
-                          </div>
-                      </div>-->
-                    </#if>
-                </@articleTag>
                 <#if page.list?? && (page.list?size > 0)>
                     <#list page.list as item>
                         <article class="fade-in">
                             <div id="article-card">
                                 <div class="article-card-wrap">
-                                    <#if item.coverImage?? && (item.coverImage?length > 7)>
-                                        <figure class="thumbnail">
-                                            <a href="${config.siteUrl}/article/${item.id?c}">
-                                                <img width="150" height="150"
-                                                     <#if config.lazyloadPath!>data-original<#else>src</#if>="${item.coverImage}"
-                                                     class="img-responsive lazy-img" alt="${item.title!}">
-                                            </a>
-                                            <span class="cat"><a
-                                                    href="${config.siteUrl}/type/${item.typeId?c}">${item.type.name}</a></span>
-                                        </figure>
-                                        <header class="entry-header">
-                                            <h2 class="entry-title">
-                                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
-                                                   title="${item.title}"
-                                                   data-toggle="tooltip" data-placement="bottom">${item.title}</a>
-                                            </h2>
-                                        </header>
-                                    <#else>
-                                        <div class="article-cover"
-                                             style="background-image: url('http://blogimg.codebear.cn/FsbffUDKA0bKZevMAee-Ve0uBuWK')">
-                                            <div class="article-title">
-                                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
-                                                   data-toggle="tooltip" data-placement="bottom">${item.title}</a>
-                                            </div>
-                                        </div>
-                                    </#if>
-                                    <div class="article-info">
-                                        <i class="fa fa-calendar-o fa-fw"></i>
-                                        发表于 ${item.createTime?string('yyyy年MM月dd日')} •
-                                        <i class="fa fa-eye fa-fw"></i>
-                                        ${item.lookCount!(0)}次围观 •
-                                        <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
-                                    </div>
-                                    <div class="article-sub-message">
-                                        ${item.description!}
-                                    </div>
-                                    <div class="tags">
-                                        <#list item.tags as tag>
-                                            <div class="tag">
-                                                ${tag.name}
-                                            </div>
-                                        </#list>
-                                    </div>
-                                    <div class="read-more"><a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a>
-                                    </div>
-                                <#--  <div class="entry-content">
-                                      <div class="archive-content">
-                                          ${item.description!}
-                                      </div>
-                                      <span class="entry-meta">
-                                      <span class="date" title="文章发表日期" data-toggle="tooltip" data-placement="bottom"><i
-                                                  class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
-                                      <span class="views" title="文章阅读次数" data-toggle="tooltip"
-                                            data-placement="bottom"><i
-                                                  class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>
-                                      <span class="comment" title="文章评论次数11" data-toggle="tooltip"
-                                            data-placement="bottom">
-                                          <a href="${config.siteUrl}/article/${item.id?c}#comment-box"
-                                             rel="external nofollow">
-                                              <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
-                                          </a>
-                                      </span>
-                                      </span>
-                                          <div class="clear"></div>
-                                          <span class="entry-more">
-                                          <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情"
-                                             data-toggle="tooltip" data-placement="bottom">阅读全文 >></a>
-                                      </span>
-                                  </div>-->
+                        <div class="article-cover"
+                             style="background-image: url('${item.coverImage}')">
+                            <div class="article-title">
+                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
+                                   data-toggle="tooltip" data-placement="bottom">${item.title}</a>
+                            </div>
+                        </div>
+                        <div class="article-info">
+                            <i class="fa fa-calendar-o fa-fw"></i>
+                            发表于 ${item.createTime?string('yyyy年MM月dd日')} •
+                            <i class="fa fa-eye fa-fw"></i>
+                            ${item.lookCount!(0)}次围观 •
+                            <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
+                        </div>
+                        <div class="article-sub-message">
+                            ${item.description!}
+                        </div>
+                        <div class="tags">
+                            <#list item.tags as tag>
+                                <div class="tag">
+                                    <a href="${config.siteUrl}/tag/${tag.id}">
+                                        ${tag.name}
+                                    </a>
+                                </div>
+                            </#list>
+                        </div>
+                        <div class="read-more"><a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a>
+                        </div>
+                    <#--  <div class="entry-content">
+                          <div class="archive-content">
+                              ${item.description!}
+                          </div>
+                          <span class="entry-meta">
+                          <span class="date" title="文章发表日期" data-toggle="tooltip" data-placement="bottom"><i
+                                      class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
+                          <span class="views" title="文章阅读次数" data-toggle="tooltip"
+                                data-placement="bottom"><i
+                                      class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>
+                          <span class="comment" title="文章评论次数11" data-toggle="tooltip"
+                                data-placement="bottom">
+                              <a href="${config.siteUrl}/article/${item.id?c}#comment-box"
+                                 rel="external nofollow">
+                                  <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
+                              </a>
+                          </span>
+                          </span>
+                              <div class="clear"></div>
+                              <span class="entry-more">
+                              <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情"
+                                 data-toggle="tooltip" data-placement="bottom">阅读全文 >></a>
+                          </span>
+                      </div>-->
                                 </div>
                             </div>
                         </article>
