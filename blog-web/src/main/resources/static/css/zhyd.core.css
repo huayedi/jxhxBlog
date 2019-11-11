@@ -2641,6 +2641,7 @@ nav a:first-child .meta-nav {
 }
 
 .about-name {
+    padding-top: 25px;
     font-size: 16px;
     font-weight: 700;
     text-align: center
