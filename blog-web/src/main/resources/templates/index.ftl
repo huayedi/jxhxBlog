@@ -37,8 +37,12 @@
                         <div class="article-cover"
                              style="background-image: url('${item.coverImage}')">
                             <div class="article-title">
-                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
-                                   data-toggle="tooltip" data-placement="bottom">${item.title}</a>
+                                <div>
+                                    <div class="title-a">
+                                        <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark"
+                                           data-toggle="tooltip" data-placement="bottom" class="super-link">${item.title}</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="article-info">
@@ -60,7 +64,7 @@
                                 </div>
                             </#list>
                         </div>
-                        <div class="read-more"><a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a>
+                        <div class="read-more title-b"><a href="${config.siteUrl}/article/${item.id?c}">阅读全文 >></a>
                         </div>
                     <#--  <div class="entry-content">
                           <div class="archive-content">
