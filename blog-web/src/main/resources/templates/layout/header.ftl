@@ -129,7 +129,7 @@
                     </ul>
                     <div class="oauth-line">
                         <span>
-                            Powered by <a href="https://gitee.com/yadong.zhang/JustAuth" target="_blank">JustAuth</a>
+                            Powered by <a href="https://gitee.com/" target="_blank">JustAuth</a>
                         </span>
                     </div>
                 </div>

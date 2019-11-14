@@ -92,7 +92,7 @@
     background-color: #262a30;
     font-size: 12px;
     margin-right: 5px;
-    border-radius: 5px !important;
+    border-radius: 0px 5px 5px 0px !important;
     transition: all .3s;
     position: relative;
     margin-left: 10px;
@@ -102,20 +102,20 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/*
+
 .tag:hover{
     background-color: rgba(3, 3, 6, 0.45);
 }
 
 
-.tag:hover .tag:before{
+.tag:hover:before{
     border-right: 12px solid rgba(3, 3, 6, 0.45);
 }
-*/
+
 
 .tag:before {
     position: absolute;
-    left: -9px;
+    left: -12px;
     top: 0;
     width: 0;
     height: 0;
@@ -278,7 +278,7 @@ ul, ol {
 }
 
 .navbar-collapse ul li {
-    margin-left: 7px;
+    margin-left: 5px;
 }
 
 body {
@@ -643,23 +643,27 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+
 #menu-div {
     height: 30px;
-    width: 105%;
     margin-top: 27px;
     color: #262a30;
     border-radius: 5px !important;
     transition: all .5s;
     text-align: center;
 }
+#menu-div a{
+    padding: 0px 6px;
+}
+
 
 #menu-div-onclick {
     height: 30px;
     margin-top: 27px;
-    color: #ffffff;
     border-radius: 5px !important;
     transition: all .5s;
     text-align: center;
+    color: #ffffff;
     background: black;
 }
 
@@ -693,7 +697,7 @@ a:-webkit-any-link {
 
 .navbar-default .menu-box .navbar-collapse ul .active a {
     height: 30px;
-    padding: 0px 8px;
+    padding: 0px 6px;
     margin-top: 27px;
     color: #ffffff !important;
     border-radius: 5px !important;

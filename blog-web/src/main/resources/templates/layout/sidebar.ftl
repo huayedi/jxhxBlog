@@ -8,7 +8,7 @@
         </div>
     <#else>
         <div class="sidebar-module" style="position: relative;">
-            <a href='https://gitee.com/' target="_blank" rel="external nofollow"><img src='https://gitee.com/' alt='Fork me on Gitee' style="position: absolute;right: 0;"/></a>
+            <#--<a href='https://gitee.com/' target="_blank" rel="external nofollow"><img src='https://gitee.com/' alt='Fork me on Gitee' style="position: absolute;right: 0;"/></a>-->
             <h5 class="custom-title"><i class="fa fa-home fa-fw icon"></i><strong>关于我</strong><small></small></h5>
             <div class="widget">
                 <div id="feed_widget">
