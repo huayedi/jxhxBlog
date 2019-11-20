@@ -7,7 +7,7 @@
     <style>
         .CodeMirror, .CodeMirror-scroll {
             min-height: 130px;
-            max-height: 200px;
+            max-height: 474px;
         }
         .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
             background: none;
