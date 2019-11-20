@@ -1131,7 +1131,7 @@ span.separation:AFTER {
 }
 
 .sidebar-module a {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .sidebar-title {
@@ -2740,6 +2740,7 @@ nav a:first-child .meta-nav {
 }
 
 .comments li a {
+    font-size: 14px;
     color: #545c63 !important;
 }
 

@@ -3,8 +3,10 @@ package com.zyd.blog.persistence.mapper;
 import com.zyd.blog.business.vo.ArticleLookConditionVO;
 import com.zyd.blog.persistence.beans.BizArticleLook;
 import com.zyd.blog.plugin.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,4 +26,13 @@ public interface BizArticleLookMapper extends BaseMapper<BizArticleLook>{
      * @return
      */
     List<BizArticleLook> findPageBreakByCondition(ArticleLookConditionVO vo);
+
+    /**
+     * 用于防止恶意刷浏览量
+     * @param ip
+     * @param articleId
+     * @return
+     * @date  2019/11/20 15:10
+     */
+    boolean IsOneHours(@Param("id") String ip,@Param("articleId") Long articleId);
 }
