@@ -156,7 +156,7 @@
             </div>
                 <ul class="nav navbar-nav ">
                 <li>
-                    <div id="menu-div">
+                    <div id="menu-div" onclick="javascript:location.href='/' ">
                         <a href="/" class="menu_a"><i class="fa fa-home"></i>首页</a>
                     </div>
                 </li>
@@ -165,7 +165,7 @@
                         <#list types as item>
                             <#if item.nodes?? && item.nodes?size gt 0>
                                 <li class="dropdown">
-                                    <div id="menu-div">
+                                    <div id="menu-div"onclick="javascript:location.href='#' ">
                                         <a href="#" class="dropdown-toggle menu_a" data-toggle="dropdown" aria-expanded="false">
                                         <i class="${item.icon!}"></i>${item.name!} <span class="caret"></span>
                                         </a>
@@ -177,12 +177,12 @@
                                     </div>
                                 </li>
                             <#else>
-                                <li> <div id="menu-div"><a href="/type/${item.id?c}" class="menu_a"><i class="${item.icon!}"></i>${item.name!}</a></div></li>
+                                <li> <div id="menu-div" onclick="javascript:location.href='/type/${item.id?c}' "><a href="/type/${item.id?c}" class="menu_a"><i class="${item.icon!}"></i>${item.name!}</a></div></li>
                             </#if>
                         </#list>
                     </#if>
                 </@zhydTag>
-                <li> <div id="menu-div"><a href="/guestbook" class="menu_a"><i class="fa fa-comments-o"></i>留言板</a></div></li>
+                <li> <div id="menu-div" onclick="javascript:location.href='/guestbook' "><a href="/guestbook" class="menu_a"><i class="fa fa-comments-o"></i>留言板</a></div></li>
                 <li><span class="pull-right nav-search main-search" data-toggle="modal" data-target=".nav-search-box"><i class="fa fa-search"></i></span></li>
             </ul>
         </div>

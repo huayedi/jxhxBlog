@@ -665,10 +665,12 @@ a:-webkit-any-link {
     text-align: center;
     color: #ffffff;
     background: black;
+    cursor:pointer;
 }
 
 #menu-div:hover {
     background: black;
+    cursor:pointer;
 }
 
 #menu-div:hover a {

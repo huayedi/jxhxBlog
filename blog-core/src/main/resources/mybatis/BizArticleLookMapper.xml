@@ -22,7 +22,7 @@
 	</select>
 
 	<select id="IsOneHours" resultType="boolean">
-		select count(id) from biz_article_look where ip = #{ip} and article_id = #{articleId}
+		select count(id) from biz_article_look where user_ip = #{ip} and article_id = #{articleId}
 		 and look_time BETWEEN date_sub(now(), interval 1 hour) AND now()
 	</select>
 

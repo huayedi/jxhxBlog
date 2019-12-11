@@ -34,5 +34,5 @@ public interface BizArticleLookMapper extends BaseMapper<BizArticleLook>{
      * @return
      * @date  2019/11/20 15:10
      */
-    boolean IsOneHours(@Param("id") String ip,@Param("articleId") Long articleId);
+    boolean IsOneHours(@Param("ip") String ip,@Param("articleId") Long articleId);
 }

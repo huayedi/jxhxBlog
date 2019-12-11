@@ -31,8 +31,12 @@ public class BizArticleLookServiceImpl implements BizArticleLookService {
         Assert.notNull(entity, "ArticleLook不可为空！");
         entity.setUpdateTime(new Date());
         entity.setCreateTime(new Date());
-        if(bizArticleLookMapper.IsOneHours(entity.getUserIp(), entity.getArticleId())){
-         return null;
+        try{
+            if(bizArticleLookMapper.IsOneHours(entity.getUserIp(), entity.getArticleId())){
+             return null;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
         bizArticleLookMapper.insertSelective(entity.getBizArticleLook());
         return entity;
