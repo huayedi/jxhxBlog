@@ -440,7 +440,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: 14px;
     color: #1c1f21;
     line-height: 24px;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
     overflow: hidden;
     word-wrap: break-word;
 }
@@ -535,11 +535,11 @@ blockquote {
 
 .blog-info-body p {
     text-indent: 0;
-    line-height: 1.5;
+    line-height: 26px;
     color: rgb(28, 31, 33);
     overflow-x: auto;
     margin: 0.8em 0 !important;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
 }
 
 .blog-info-body table {
@@ -2446,7 +2446,7 @@ nav a:first-child .meta-nav {
     }
 
     .col-sm-8 {
-        width: 60%;
+        width: 70%;
         min-height: 603px;
 
     }

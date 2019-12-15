@@ -38,7 +38,7 @@
                     <h1 class="blog-info-title">
                         <strong>${article.title}</strong>
                     </h1>
-                    <div class="blog-info-body ${article.isMarkdown?string('markdown-body editor-preview-active-side', '')}">
+                    <div class="blog-info-body ${article.isMarkdown?string('markdown-body editor-preview-active-side', '')}" style="font-size: 15px;">
                         ${article.content}
                     </div>
                     <div class="separateline"><span>正文到此结束</span></div>
@@ -95,9 +95,10 @@
                 </div>
             </div>
             <div class="blog-body">
-                <a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wylo59db&utm_source=wylo59db" target="_blank" rel="external nofollow">
+                <#--广告位-->
+               <#-- <a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wylo59db&utm_source=wylo59db" target="_blank" rel="external nofollow">
                     <img src="${config.staticWebSite}/img/ad/aliyun_sale1000-60.png" alt="阿里云首购8折" class="img-responsive" style="width: 100%;">
-                </a>
+                </a>-->
             </div>
             <div class="blog-body prev-next">
                 <nav class="nav-single wow" data-wow-delay="0.3s">
