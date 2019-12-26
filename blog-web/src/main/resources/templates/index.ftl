@@ -31,11 +31,11 @@
             <div class="col-sm-8 blog-main">
                 <#if page.list?? && (page.list?size > 0)>
                     <#list page.list as item>
-                        <article class="fade-in">
+                        <article class="fade-in" style="width:90%;">
                             <div id="article-card">
                                 <div class="article-card-wrap">
                         <div class="article-cover"
-                             style="background-image: url('${item.coverImage}')">
+                             style="background-image: url('${item.coverImage}');background-size: 100% 100%;">
                             <div class="article-title">
                                 <div>
                                     <div class="title-a">

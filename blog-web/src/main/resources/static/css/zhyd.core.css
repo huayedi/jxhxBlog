@@ -842,19 +842,6 @@ a:-webkit-any-link {
     list-style: none;
 }
 
-/* 首页公告通知-breadcrumb  end */
-
-/* 返回顶部 start */
-/*.to-top {
-    !*background: url(../img/back-top.png) no-repeat left top;*!
-    width: 55px;
-    height: 55px;
-    color: black;
-    padding: 15px;
-    border-radius: 4px;
-    z-index: 100;
-    background: red;
-}*/
 
 .to-top {
     position: fixed;
@@ -2452,9 +2439,9 @@ nav a:first-child .meta-nav {
     }
 
     .col-sm-3 {
-        padding-right: 11px;
-        padding-left: 72px;
-        width: 29.3333%;
+        /*padding-right: 11px;*/
+        padding-left: 10px;
+        /*width: 29.3333%;*/
     }
 
     .col-sm-offset-1 {
