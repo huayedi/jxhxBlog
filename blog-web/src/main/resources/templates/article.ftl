@@ -141,7 +141,7 @@
                             <li class="line-li">
                                 <div class="line-container">
                                     <div class="line-left">
-                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${config.staticWebSite}/img/favicon.ico" width="50" height="50" rel="external nofollow"/>
+                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="http://www.jxhximg.top/oneblog/20191227132129883.jpeg" width="50" height="50" rel="external nofollow"/>
                                     </div>
                                     <div class="line-right">
                                         <div class="text">
