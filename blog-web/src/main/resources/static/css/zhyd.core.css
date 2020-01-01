@@ -576,8 +576,11 @@ pre {
     white-space: pre;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #fbfdff !important;
-    border: 1px solid #f1f3f5;
+    background-color: #f0f1ed !important;
+    border: 1px solid #c3c4c5;
+}
+pre code{
+    background-color: #f0f1ed !important;
 }
 
 .bottom-line {
@@ -3383,6 +3386,9 @@ nav a:first-child .meta-nav {
 
 .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
     background: none !important;
+}
+.CodeMirror-code pre{
+    padding: 0px !important;
 }
 
 .editor-statusbar {
